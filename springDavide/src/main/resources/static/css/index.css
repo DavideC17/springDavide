@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 2);
+    padding: 24px;
+}
+
+header > div > img{
+    background-color: white;
+    border-radius: 50%;
+    width: 10%;
+    box-shadow: 0px 0px 10px 0px coral;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul a {
+    color: white;
+    margin:4px 14px 4px 14px;
+}
+
+#btn-home, #btn-menu {
+    color: coral;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+#btn-home:hover, #btn-menu:hover {
+    text-decoration: underline;
+}
+
+
+
+body > #background-diplay{
+    z-index: -99;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 51%, rgba(0,212,255,0.27054149296437324) 100%);
+}
+
+body > video{
+    z-index: -100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+body > main > #div-top{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-top > h1 {
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 16px;
+}
+
+main > #div-top a{
+    color: coral;
+    border-radius: 24px;
+    padding: 24px;
+    border: solid 3px coral;
+    transition: all 0.5s ease;
+}
+
+main > #div-top a:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+
+main > #div-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 160vh;
+    background: linear-gradient(0deg, rgba(0,0,0,0.92) 45%, rgba(0,0,0,0.8083566190147934) 76%, rgba(253,187,45,0) 100%);;
+}
+
+
+#div-bottom > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60vh;
+    width: 50%;
+    padding: 46px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+#div-bottom > .container > #select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-bottom > .container #select h1 {
+    margin: 0 8px 0 8px;
+    font-size: 1.5rem;
+    color: gray;
+    margin-bottom: 34px;
+}
+
+#div-bottom > .container #select .to_use {
+    font-size: 3rem;
+    color: coral;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+#div-bottom > .container > form{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-bottom > .container > form > div > h2 {
+    margin: 6px;
+}
+
+#div-bottom > .container input {
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 8px;
+    border: solid 2px white;
+    border-radius: 24px;
+}
+
+#div-bottom > .container input:focus{
+    outline: none;
+    border: solid 2px coral;
+}
+
+#div-bottom > .container input, select, textarea{
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#div-bottom > .container button {
+    display: block;
+    width: 50%;
+    background-color: transparent;
+    color: coral;
+    border-radius: 24px;
+    padding: 14px;
+    border: solid 3px coral;
+    transition: all 0.5s ease;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+#div-bottom > .container button:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+
+
+#popupOK {
+    position: absolute;
+    width: 40%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    color: black;
+    padding: 54px;
+}
+
+#popupOK > h1 {
+    color: coral;
+    font-size: 2rem;
+    margin-bottom: 34px;
+}
+
+

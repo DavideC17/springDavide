@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="background-diplay">
+    </div>
+    <video autoplay loop src="https://video.wixstatic.com/video/11062b_3e2f37c297534f9ead156265242fbca8/1080p/mp4/file.mp4"></video>
+
+    <header>
+        <div>
+            <img src="\img\LayoutStudLogo.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <li><a href="/"><span id="btn-home">Home</span></a></li>
+                <li><a href="#iscriviti"><span id="btn-menu" >Iscriviti</span></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="div-top">
+            <h1>Visualizza e Modifica User</h1>
+            <a href="/user">User</a>
+
+        </div>
+
+        <div id="div-bottom">
+            <div class="container">
+                <div id="select">
+                    <h1 id="subscribe" class="to_use">Subscribe</h1>
+                    <h1 id="login">Login</h1>
+                </div>
+                <form id="form_subscribe">
+                    <div>
+                        <h2>ID</h2>
+                        <input type="number" name="inputId">
+                    </div>
+                    <div>
+                        <h2>Nome</h2>
+                        <input type="text" name="inputFirstName">
+                    </div>
+                    <div>
+                        <h2>Cognome</h2>
+                        <input type="text" name="inputLastName">
+                    </div>
+                    <div>
+                        <h2>Email</h2>
+                        <input type="text" name="inputEmail">
+                    </div>
+                    <div>
+                        <h2>Password</h2>
+                        <input type="text" name="inputPassword">
+                    </div>
+                    <button id="iscriviti" type="button" onclick="addUser(inputId,inputFirstName,inputLastName,inputEmail)">Subscribe</button>
+                </form>
+
+
+
+                <form id="form_login" th:action="@{/login}" method="post">
+                    <div>
+                        <h2>Email</h2>
+                        <input type="text" name="inputEmail">
+                    </div>
+                    <div>
+                        <h2>Password</h2>
+                        <input type="text" name="inputPassword">
+                    </div>
+                    <input type="submit" value="Login" />
+                </form>
+
+
+                <div id="popupOK">
+                    <h1>REGISTRATO</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur natus, quidem reprehenderit, debitis dolores maiores nemo, deserunt sint dolore totam aperiam veniam omnis fuga dolorum molestiae tempore sunt vel expedita.</p>
+                    <button id="chiudiBtn" type="button" onclick="chiudiPopUp()">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="/js/index.js"></script>
+
+
+
+</body>
+
+    
+</html>

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringDavideApplication<springDavide>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.SpringDavideApplication",
+            "projectName": "springDavide",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
